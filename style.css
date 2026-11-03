@@ -466,4 +466,37 @@ footer a:focus {
     h2 {
         font-size: 1.25rem;
     }
+   .menu-toggle-btn {
+    display: none;
+    background-color: var(--color-surface-alt);
+    color: var(--color-text);
+    border: 1px solid var(--color-accent-light);
+    padding: 0.5rem 1rem;
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin: 0.5rem auto;
+    border-radius: var(--radius);
+}
+
+.form-feedback-msg {
+    display: none;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 480px) {
+    .menu-toggle-btn {
+        display: block;
+    }
+    
+    nav ul.nav-hidden {
+        display: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+   
 }
