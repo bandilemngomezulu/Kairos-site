@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about a Kairos Influence product — size, item, and quantity.">
+    <title>Enquiry | Kairos Influence</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Kairos Influence logo" class="logo">
+        <p class="tagline">Cape Town Streetwear. Seize the Moment.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Product Enquiry</h1>
+        <p>Interested in a piece? Fill in the form below and our team will confirm sizing, availability,
+           and payment options.</p>
+
+        <!-- Enquiry form: functionality to be wired up with JavaScript in a later part of this project -->
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="item">Item:</label>
+            <select id="item" name="item">
+                <option value="sanctified-cross-tee">Sanctified Cross Tee</option>
+                <option value="kairos-zip-hoodie">Kairos Zip Hoodie</option>
+                <option value="kairos-cross-joggers">Kairos Cross Joggers</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kairos Influence. All rights reserved.</p>
+        <p>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>
